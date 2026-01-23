@@ -1,0 +1,6 @@
+cd -- change repository
+cd.. -- back
+
+project folder --> local repository [.git hidden folder project location ] : commit 
+
+local repository --> Remote 
