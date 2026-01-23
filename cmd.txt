@@ -12,3 +12,13 @@ git show message -> git message commit
 git copy -> git clone https://github.com/AkshayKPrajapati/gitSpace.git 
                 git clone url
 
+git push -> git push origin main
+
+git pull - > uploaded code => remote to local
+git pull origin master(branch)
+
+developer 1 : ABCDE : ABCDE1234 - pushed into github
+developer 2 : ABCDE
+                        git pull origin master
+                        -> ABCDE1234
+
