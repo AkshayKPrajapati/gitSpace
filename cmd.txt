@@ -4,3 +4,11 @@ cd.. -- back
 project folder --> local repository [.git hidden folder project location ] : commit 
 
 local repository --> Remote 
+
+
+show history -> git log 
+git show message -> git message commit 
+
+git copy -> git clone https://github.com/AkshayKPrajapati/gitSpace.git 
+                git clone url
+
