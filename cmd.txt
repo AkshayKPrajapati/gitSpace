@@ -22,3 +22,14 @@ developer 2 : ABCDE
                         git pull origin master
                         -> ABCDE1234
 
+
+
+
+
+
+
+
+
+
+git branching 
+
