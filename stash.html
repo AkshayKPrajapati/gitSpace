@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    git stash save "WIP: changes before switching branches" # Stash current 
+    <!--if you don't want to commit but save your incomplete code teamporary-->
+    
+    changes with a message
+    git stash list # List all stashed changes
+
+    git stash apply # Apply the most recent stash without removing it from the stash list
+    git stash drop stash@{0} # Remove a specific stash by its index
+
+    git stash pop # Apply the most recent stash and remove it from the stash list
+    git stash pop stash@{1} # Apply a specific stash by its index and remove it from the stash list
+
+
+    git stash apply stash@{0} # Apply the most recent stash
+    git stash apply stash@{1} # Apply a specific stash by its index
+
+    
+</body>
+</html>
