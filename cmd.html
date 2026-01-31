@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    cd -- change repository
+    cd.. -- back to previous folder
+    mkdir -- make directory
+
+
+    git init -- initialize git in the project folder <!-- creates .git hidden folder in project location -->
+    git status -- check current status of the project <!-- shows modified , untracked files -->
+    git add . -- add all modified and untracked files to staging area <!-- ready to commit -->
+    git commit -m "message" -- commit the changes with message <!-- saves the changes to local repository -->
+
+
+
+    project folder --> local repository [.git hidden folder project location ] : commit
+    <!--  git init , git add , git commit -->
+    local repository --> Remote repository [github , gitlab , bitbucket]
+    <!-- git push , git pull -->
+    git remote add origin
+    -> git remote add origin
+    <!-- link local repository to remote repository -->
+    -> git remote -v
+    <!-- verify remote repository link -->
+
+    show history -> git log <!-- show all commit history -->
+    git show message -> git message commit <!-- show specific commit message -->
+
+    git copy -> git clone https://github.com/AkshayKPrajapati/gitSpace.git
+    git clone url
+
+    git push -> git push origin main (branch) <!-- push from local to remote -->
+
+    git pull - > uploaded code => remote to local
+    git pull origin master(branch) <!-- pull from remote to local -->
+
+    developer 1 : ABCDE : ABCDE1234 - pushed into github
+    developer 2 : ABCDE
+    git pull origin master <!--pull-->
+    -> ABCDE1234
+
+
+
+
+
+
+
+
+
+
+    git branching
+    git branch -M master <!--creating new master branch-->
+    git branch newFeature <!-- creating new branch -->
+    git checkout newFeature <!-- switching to new branch -->
+    git merge newFeature <!-- merging newFeature branch to master branch -->
+    git branch -d newFeature <!-- deleting newFeature branch -->
+
+</body>
+
+</html>
