@@ -1,67 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git Commands Cheat Sheet</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .box {
+            background: #ffffff;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        code {
+            background: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    cd -- change repository
-    cd.. -- back to previous folder
-    mkdir -- make directory
 
+    <h1>Git & GitHub Cheat Sheet</h1>
 
-    git init -- initialize git in the project folder <!-- creates .git hidden folder in project location -->
-    git status -- check current status of the project <!-- shows modified , untracked files -->
-    git add . -- add all modified and untracked files to staging area <!-- ready to commit -->
-    git commit -m "message" -- commit the changes with message <!-- saves the changes to local repository -->
+    <div class="box">
+        <h2>Basic Terminal Commands</h2>
+        <ul>
+            <li><code>cd folderName</code> – change directory</li>
+            <li><code>cd ..</code> – go back to previous folder</li>
+            <li><code>mkdir folderName</code> – create a new directory</li>
+        </ul>
+    </div>
 
+    <div class="box">
+        <h2>Initialize Git</h2>
+        <ul>
+            <li><code>git init</code> – initialize git in project folder</li>
+            <li>Creates a hidden <code>.git</code> folder</li>
+        </ul>
+    </div>
 
+    <div class="box">
+        <h2>Check Status</h2>
+        <ul>
+            <li><code>git status</code> – shows modified & untracked files</li>
+        </ul>
+    </div>
 
-    project folder --> local repository [.git hidden folder project location ] : commit
-    <!--  git init , git add , git commit -->
-    local repository --> Remote repository [github , gitlab , bitbucket]
-    <!-- git push , git pull -->
-    git remote add origin
-    -> git remote add origin
-    <!-- link local repository to remote repository -->
-    -> git remote -v
-    <!-- verify remote repository link -->
+    <div class="box">
+        <h2>Add & Commit</h2>
+        <ul>
+            <li><code>git add .</code> – add all files to staging area</li>
+            <li><code>git commit -m "message"</code> – save changes locally</li>
+        </ul>
+    </div>
 
-    show history -> git log <!-- show all commit history -->
-    git show message -> git message commit <!-- show specific commit message -->
+    <div class="box">
+        <h2>Local to Remote Repository</h2>
+        <ul>
+            <li><code>git remote add origin URL</code> – connect to GitHub</li>
+            <li><code>git remote -v</code> – verify remote URL</li>
+            <li><code>git push origin main</code> – push code to remote</li>
+            <li><code>git pull origin main</code> – pull code from remote</li>
+        </ul>
+    </div>
 
-    git copy -> git clone https://github.com/AkshayKPrajapati/gitSpace.git
-    git clone url
+    <div class="box">
+        <h2>Clone Repository</h2>
+        <ul>
+            <li><code>git clone https://github.com/username/repo.git</code></li>
+        </ul>
+    </div>
 
-    git push -> git push origin main (branch) <!-- push from local to remote -->
+    <div class="box">
+        <h2>Commit History</h2>
+        <ul>
+            <li><code>git log</code> – view commit history</li>
+            <li><code>git show commitID</code> – view specific commit</li>
+        </ul>
+    </div>
 
-    git pull - > uploaded code => remote to local
-    git pull origin master(branch) <!-- pull from remote to local -->
+    <div class="box">
+        <h2>Branching</h2>
+        <ul>
+            <li><code>git branch</code> – list branches</li>
+            <li><code>git branch newFeature</code> – create branch</li>
+            <li><code>git checkout newFeature</code> – switch branch</li>
+            <li><code>git merge newFeature</code> – merge branch</li>
+            <li><code>git branch -d newFeature</code> – delete branch</li>
+            <li><code>git branch -m oldName newName</code> – rename branch</li>
+        </ul>
+    </div>
 
-    developer 1 : ABCDE : ABCDE1234 - pushed into github
-    developer 2 : ABCDE
-    git pull origin master <!--pull-->
-    -> ABCDE1234
+    <div class="box">
+        <h2>Undo Changes</h2>
+        <ul>
+            <li><code>git checkout -- fileName</code> – discard changes in working directory</li>
+            <li><code>git reset HEAD fileName</code> – unstage file</li>
+            <li><code>git revert commitID</code> – create a new commit that undoes changes</li>
+        </ul>
 
-
-
-
-
-
-
-
-
-
-    git branching
-    git branch -M master <!--creating new master branch-->
-    git branch newFeature <!-- creating new branch -->
-    git checkout newFeature <!-- switching to new branch -->
-    git merge newFeature <!-- merging newFeature branch to master branch -->
-    git branch -d newFeature <!-- deleting newFeature branch -->
+    </div>
 
 </body>
-
 </html>
